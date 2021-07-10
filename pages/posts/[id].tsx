@@ -10,27 +10,27 @@ const Post = ({ post }: PostPropsInterface) => {
         <div className={styles.post + ' container'}>
             <div
                 className={styles.image}
-                style={{ backgroundImage: `url(${post.image})` }}
+                style={{ backgroundImage: `url(${post?.image})` }}
             />
             <div className={styles.postData}>
                 <div className={styles.postDataColumn}>
                     <p className={styles.dataName}>Author:</p>
                     <p
                         className={styles.dataValue}
-                    >{`${post.owner.firstName} ${post.owner.lastName}`}</p>
+                    >{`${post?.owner.firstName} ${post?.owner.lastName}`}</p>
                 </div>
                 <div className={styles.postDataColumn}>
                     <p className={styles.dataName}>Likes:</p>
-                    <p className={styles.dataValue}>{post.likes}</p>
+                    <p className={styles.dataValue}>{post?.likes}</p>
                 </div>
                 <div className={styles.postDataColumn}>
                     <p className={styles.dataName}>Published:</p>
-                    <p className={styles.dataValue}>{post.publishDate}</p>
+                    <p className={styles.dataValue}>{post?.publishDate}</p>
                 </div>
 
                 <div className={styles.postDataColumn}>
                     <p className={styles.dataName}>Description:</p>
-                    <p className={styles.dataValue}>{post.text}</p>
+                    <p className={styles.dataValue}>{post?.text}</p>
                 </div>
             </div>
         </div>
