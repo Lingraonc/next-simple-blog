@@ -1,0 +1,45 @@
+.h1 {
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 113px;
+    color: var(--white);
+}
+
+.h2 {
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--black);
+
+}
+
+.h3 {
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--grey);
+}
+
+.h4 {
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--black);
+}
+
+
+@media (max-width: 1024px) {
+    .h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
